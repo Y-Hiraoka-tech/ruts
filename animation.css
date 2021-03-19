@@ -1,0 +1,97 @@
+/*****aタグの下線をなくす*/
+a {
+  text-decoration: none;
+  }
+
+/***ホバーボタン*/
+body{
+  background-color: bisque;
+}
+a.btn{
+  display: block;
+  width: 120px;
+  text-align: center;
+  margin: 0 0 50px 30px;
+  padding: 20px;
+  color: #fff;
+}
+
+a.btn{
+background-color: #00A2FF;
+transition-property: background;
+transition-duration: 0.1s;
+transition-timing-function: ease;
+transition-delay: 0.1s;
+}
+a.btn:hover{
+  background-color: #FF9300;
+transition-property: background;
+transition-duration: 0.3s;
+transition-timing-function: ease;
+transition-delay: 0.1s;
+}
+
+/*gallery設定*/
+
+#gallery {
+  display: block;
+  width: 360px;
+  background-color: #fff;
+}
+#gallery a .entry_date{
+  font-size: 11px;
+  margin-bottom: 6px;
+  color: rgb(70, 68, 68);
+}
+#gallery a .entry_title{
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: rgb(70, 68, 68);
+}
+#gallery a img{
+  overflow: hidden;
+  width: 360px;
+  height: 250px;
+}
+#gallery a .continue{
+  font-size: 15px;
+  background-color: #fff;
+  padding: 12px 10px 10px;
+  margin-top: 10px;
+  color: black;
+}
+#gallery a .continue span{
+  margin-left: 5px;
+}
+/****transition*/
+
+#gallery  a .continue{
+  background-color: #fff;
+  border: 1px solid #fff;
+  color: #333;
+  transition: all .15s ease;
+}
+#gallery a:hover .continue{
+  background-color: #333;
+  border: 1px solid #333;
+  color: #fff;
+  transition: all .3s ease;
+}
+#gallery a .continue span{
+  color: #333;
+  transition: all .3s ease;
+}
+#gallery a:hover .continue span{
+  color: #fff;
+  margin-left: 10px;
+  transition: all .3s ease;
+}
+
+#gallery ul li a .img img{
+  transition: all .15 ease;
+}
+#gallery ul li a:hover .img img{
+  transform: scale(1.05);
+  transition: all .3 ease;
+}

@@ -1,0 +1,11 @@
+@charset "utf-8";
+
+body{
+    font-family: serif;
+    background-color: #333333;
+    color: #ffffff;
+}
+
+*,*::before,*::after{
+    box-sizing: border-box;
+}
