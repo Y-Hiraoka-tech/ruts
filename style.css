@@ -9,29 +9,101 @@ html,body{
 .contents{
   background-image:url(img/county２.jpg);
   background-size: cover;
+}
+.contents h1{
   height: 48vw;
   text-align: center;
   padding-top: 15%;
-}
-.contents h1{
   color: #fff;
   font-size: 2.775vw;
   font-family: "HGP行書体";
 }
 .navbar{
   padding: .8rem;
-  background-color: #EEE;
 }
-.navbar-nav li{
-  padding-right: 3vw;
+.logowith{
+  width: 40%;
+  height: auto;
 }
-.nav-icon{
-  height: 2.6vw;
-  width: auto;
+
+
+
+
+/* Page */
+
+html {
+  box-sizing: border-box;
 }
-.nav-link{
-  font-size: 1.1em;
+
+*, 
+*:before, 
+*:after {
+  box-sizing: inherit;
 }
+/* Navigation */
+
+.nav {
+  font-family: Georgia, Arial, sans-serif;
+  font-size: 14px;
+}
+
+.nav-items {
+  padding: 0;
+  list-style: none;
+}
+
+.nav-item {
+  display: inline-block;
+}
+
+.nav-item:last-child {
+  margin-right: 0;
+}
+
+.nav-link,
+.nav-link:link, 
+.nav-link:visited, 
+.nav-link:active
+ {
+  display: block;
+  position: relative;
+  font-size: 1.2vw;
+  letter-spacing: 1px;
+  cursor: pointer;
+  text-decoration: none;
+  outline: none;
+}
+
+.nav-link,
+.nav-link:link, 
+.nav-link:visited, 
+.nav-link:active {
+  color: rgb(100, 76, 76);
+  font-weight: bold;
+}
+
+.nav-link::before {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: rgba(0,0,0,0.2);
+  opacity: 0;
+  -webkit-transform: translate(0, 10px);
+  transform: translate(0, 10px);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.nav-link:hover::before,
+.nav-link:hover::before {
+  opacity: 1;
+  -webkit-transform: translate(0, 5px);
+  transform: translate(0, 5px);
+}
+
+
 /*-スライドサイズ-*/
 .carousel-inner img{
   width: 80%;
